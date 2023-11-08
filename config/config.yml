@@ -1,5 +1,7 @@
 rest:
   ssl: true
-  host: api7.dspace.org
+  host: dspace.dev.ntkcz.cz
   port: 443
   nameSpace: /server
+themes:
+  - name: custom
