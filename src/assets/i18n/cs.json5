@@ -158,7 +158,7 @@
 
   "admin.registries.metadata.schemas.no-items": "Žádná schémata metadat k zobrazení.",
 
-  "admin.registries.metadata.schemas.table.delete":"Smazat vybrané",
+  "admin.registries.metadata.schemas.table.delete": "Smazat vybrané",
 
   "admin.registries.metadata.schemas.table.id": "ID",
 
@@ -672,9 +672,9 @@
 
   "auth.messages.token-refresh-failed": "Nepodařilo se obnovit váš přístupový token. Prosím přihlašte se znovu.",
 
-  "bitstream.download.page": "Nyní se stahuje {{bitstream}}..." ,
+  "bitstream.download.page": "Nyní se stahuje {{bitstream}}...",
 
-  "bitstream.download.page.back": "Zpět" ,
+  "bitstream.download.page.back": "Zpět",
 
   "bitstream.edit.authorizations.link": "Upravit politiky souboru",
 
@@ -1378,9 +1378,9 @@
 
   "cookies.consent.purpose.sharing": "Sdílení",
 
-  "curation-task.task.citationpage.label":  "Vytvořit stránku s citacemi",
+  "curation-task.task.citationpage.label": "Vytvořit stránku s citacemi",
 
-  "curation-task.task.checklinks.label":  "Zkontrolovat odkazy v metadatech",
+  "curation-task.task.checklinks.label": "Zkontrolovat odkazy v metadatech",
 
   "curation-task.task.noop.label": "NOOP",
 
@@ -1543,7 +1543,7 @@
   "confirmation-modal.delete-profile.confirm": "Odstranit",
 
   "confirmation-modal.delete-subscription.header": "Zrušit odběr notifikací",
-  
+
   "confirmation-modal.delete-subscription.info": "Jste si jistí, že chcete odhlásit odběr notifikací \"{{ dsoName }}\"",
 
   "confirmation-modal.delete-subscription.cancel": "Zrušit",
@@ -1578,7 +1578,7 @@
 
   "error.sub-collections": "Chyba při načítání dílčích kolekcí",
 
-  "error.sub-communities":  "Chyba při načítání dílčích komunit",
+  "error.sub-communities": "Chyba při načítání dílčích komunit",
 
   "error.submission.sections.init-form-error": "Při inicializaci sekce došlo k chybě, zkontrolujte prosím konfiguraci vstupního formuláře. Podrobnosti jsou uvedeny níže : <br> <br>",
 
@@ -1776,7 +1776,7 @@
 
   "grant-deny-request-copy.intro2": "Po výběru možnosti se zobrazí návrh e-mailové odpovědi, který můžete upravit.",
 
-  "grant-deny-request-copy.processed":" Tato žádost již byla zpracována. Pomocí níže uvedeného tlačítka se můžete vrátit na domovskou stránku.",
+  "grant-deny-request-copy.processed": " Tato žádost již byla zpracována. Pomocí níže uvedeného tlačítka se můžete vrátit na domovskou stránku.",
 
   "grant-request-copy.email.message": "V reakci na Vaši žádost si Vám dovoluji zaslat v příloze kopii souboru (souborů) týkajícího se dokumentu: {{ itemUrl }} ({{ itemName }}), jehož jsem autorem.\n\nS pozdravem,\n{{ authorName }} <{{ authorEmail }}>",
 
@@ -1794,9 +1794,9 @@
 
   "health-page.heading": "Stav systému",
 
-  "health-page.info-tab" : "Informace",
+  "health-page.info-tab": "Informace",
 
-  "health-page.status-tab" : "Status",
+  "health-page.status-tab": "Status",
 
   "health-page.error.msg": "Služba kontrolující stav systému je momentálně nedostupná.",
 
@@ -1882,15 +1882,15 @@
 
   "info.feedback.email-label": "Váš e-mail",
 
-  "info.feedback.create.success" : "Zpětná vazba úspěšně odeslána!",
+  "info.feedback.create.success": "Zpětná vazba úspěšně odeslána!",
 
-  "info.feedback.error.email.required" : "Je vyžadována platná e-mailová adresa",
+  "info.feedback.error.email.required": "Je vyžadována platná e-mailová adresa",
 
-  "info.feedback.error.message.required" : "Je vyžadován komentář",
+  "info.feedback.error.message.required": "Je vyžadován komentář",
 
-  "info.feedback.page-label" : "Stránka",
+  "info.feedback.page-label": "Stránka",
 
-  "info.feedback.page_help" : "Stránka, která se týká vaší zpětné vazby",
+  "info.feedback.page_help": "Stránka, která se týká vaší zpětné vazby",
 
   "item.alerts.private": "Tento záznam je nezobrazitelný",
 
@@ -2434,9 +2434,9 @@
 
   "item.page.bitstreams.collapse": "Sbalit",
 
-  "item.page.filesection.original.bundle" : "Původní svazek",
+  "item.page.filesection.original.bundle": "Původní svazek",
 
-  "item.page.filesection.license.bundle" : "Licence svazku",
+  "item.page.filesection.license.bundle": "Licence svazku",
 
   "item.page.return": "Zpět",
 
@@ -2466,19 +2466,19 @@
 
   "item.preview.dc.type": "Typ:",
 
-  "item.preview.oaire.citation.issue" : "Číslo",
+  "item.preview.oaire.citation.issue": "Číslo",
 
-  "item.preview.oaire.citation.volume" : "Ročník",
+  "item.preview.oaire.citation.volume": "Ročník",
 
-  "item.preview.dc.relation.issn" : "ISSN",
+  "item.preview.dc.relation.issn": "ISSN",
 
-  "item.preview.dc.identifier.isbn" : "ISBN",
+  "item.preview.dc.identifier.isbn": "ISBN",
 
   "item.preview.dc.identifier": "Identifikátor:",
 
-  "item.preview.dc.relation.ispartof" : "Časopis nebo seriál",
+  "item.preview.dc.relation.ispartof": "Časopis nebo seriál",
 
-  "item.preview.dc.identifier.doi" : "DOI",
+  "item.preview.dc.identifier.doi": "DOI",
 
   "item.preview.dc.publisher": "Nakladatel:",
 
@@ -2574,11 +2574,11 @@
 
   "item.version.create.modal.submitted.text": "Vytváří se nová verze. To může nějakou dobu trvat, pokud má záznam mnoho vztahů.",
 
-  "item.version.create.notification.success" : "Byla vytvořena nová verze s číslem verze {{version}}",
+  "item.version.create.notification.success": "Byla vytvořena nová verze s číslem verze {{version}}",
 
-  "item.version.create.notification.failure" : "Nová verze nebyla vytvořena",
+  "item.version.create.notification.failure": "Nová verze nebyla vytvořena",
 
-  "item.version.create.notification.inProgress" : "Nová verze nemůže být vytvořena, protože v historii verzí probíhá odesílání.",
+  "item.version.create.notification.inProgress": "Nová verze nemůže být vytvořena, protože v historii verzí probíhá odesílání.",
 
   "item.version.delete.modal.header": "Smazat verzi",
 
@@ -2762,7 +2762,7 @@
 
   "loading.top-level-communities": "Načítají se komunity nejvyšší úrovně...",
 
-  "login.form.email": "E-mailová adresa",
+  "login.form.email": "Uživatelské jméno",
 
   "login.form.forgot-password": "Zapomněli jste své heslo?",
 
@@ -3066,9 +3066,9 @@
 
   "nav.subscriptions": "Nastavení notifikací",
 
-  "nav.toggle" : "Přepnout navigaci",
+  "nav.toggle": "Přepnout navigaci",
 
-  "nav.user.description" : "Panel uživatelského profilu ",
+  "nav.user.description": "Panel uživatelského profilu ",
 
   "none.listelement.badge": "Záznam",
 
@@ -3538,7 +3538,7 @@
 
   "resource-policies.edit.page.other-failure.content": "Při úpravě politiky zdrojů došlo k chybě. Cíl (uživatel nebo skupina) byl úspěšně aktualizován.",
 
-  "resource-policies.edit.page.success.content":  "Operace byla úspěšná",
+  "resource-policies.edit.page.success.content": "Operace byla úspěšná",
 
   "resource-policies.edit.page.title": "Upravit politiku zdrojů ",
 
@@ -3651,7 +3651,7 @@
   "search.filters.applied.f.birthDate.max": "Datum narozdení do",
 
   "search.filters.applied.f.birthDate.min": "Datum narození od",
- 
+
   "search.filters.applied.f.supervisedBy": "Zkontrolováno",
 
   "search.filters.applied.f.withdrawn": "Zrušeno",
@@ -4528,7 +4528,7 @@
 
   "submission.sections.license.required": "Musíte souhlasit s licencí",
 
-  "submission.sections.license.notgranted":  "Musíte licenci přijmout",
+  "submission.sections.license.notgranted": "Musíte licenci přijmout",
 
   "submission.sections.sherpa.publication.information": "Informace o publikaci",
 
@@ -4742,7 +4742,7 @@
 
   "thumbnail.person.placeholder": "Dočasný profilový obrázek",
 
-  "title": "DSpace",
+  title: "DSpace",
 
   "vocabulary-treeview.header": "Hierarchické stromové zobrazení",
 
@@ -5232,4 +5232,19 @@
 
   "access-control-option-end-date-note": "Vyberte datum, do kterého má být typ přístupu aktivován",
 
+  "publication.page.title-alternate": "Podnázev: ",
+
+  "item.page.identifier.doi": "DOI",
+
+  "item.page.identifier.isbn": "ISBN",
+
+  "item.page.identifier.issn": "ISSN",
+
+  "item.page.event.name": "Název akce",
+
+  "item.page.event.dateLocation": "Datum a místo konání",
+
+  "item.page.licence": "Licence",
+
+  "item.page.license": "Licence",
 }

@@ -2760,7 +2760,7 @@
 
   "loading.top-level-communities": "Loading top-level communities...",
 
-  "login.form.email": "Email address",
+  "login.form.email": "NTK Username",
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
@@ -4726,7 +4726,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  title: "DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5216,4 +5216,19 @@
 
   "access-control-option-end-date-note": "Select the date until which the related access condition is applied",
 
+  "publication.page.title-alternate": "Subtitle: ",
+
+  "item.page.identifier.doi": "DOI",
+
+  "item.page.identifier.isbn": "ISBN",
+
+  "item.page.identifier.issn": "ISSN",
+
+  "item.page.event.name": "Event name",
+
+  "item.page.event.dateLocation": "Date and place of the event",
+
+  "item.page.licence": "Licence",
+
+  "item.page.license": "License",
 }
