@@ -1,6 +1,6 @@
 rest:
   ssl: true
-  host: dspace.test.ntkcz.cz
+  host: dspace.dev.ntkcz.cz
   port: 443
   nameSpace: /server
 themes:

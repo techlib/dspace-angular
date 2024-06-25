@@ -1,19 +1,7 @@
 {
+  // DSpace default: "All of DSpace"
+  "menu.section.browse_global": "Browse DSpace",
 
-"publication.page.title-alternate": "Subtitle: ",
-
-"item.page.identifier.doi": "DOI",
-
-"item.page.identifier.isbn": "ISBN",
-
-"item.page.identifier.issn": "ISSN",
-
-"item.page.event.name": "Event name",
-
-"item.page.event.dateLocation": "Date and place of the event",
-
-"item.page.license": "License",
-
-"login.form.email": "NTK Username",
-
+  // DSpace default: "DSpace Angular :: "
+  "repository.title.prefix": "DSpace :: ",
 }
