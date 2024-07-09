@@ -45,6 +45,10 @@
       [fields]="['person.givenName']"
       [label]="'person.page.firstname'">
     </ds-generic-item-page-field>
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['person.identifier.orcid']"
+      [label]="'item.page.orcid'">
+    </ds-item-page-uri-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.title']"
       [label]="'person.page.name'">

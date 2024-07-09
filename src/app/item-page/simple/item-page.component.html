@@ -1,5 +1,6 @@
 <div class="container" *ngVar="(itemRD$ | async) as itemRD">
   <div class="item-page" *ngIf="itemRD?.hasSucceeded" @fadeInOut>
+  <!-- <span>### RA test ###</span> -->
     <div *ngIf="itemRD?.payload as item">
       <ds-themed-item-alerts [item]="item"></ds-themed-item-alerts>
       <ds-item-versions-notice [item]="item"></ds-item-versions-notice>
