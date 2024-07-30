@@ -1,0 +1,18 @@
+rest:
+  ssl: true
+  host: dspace.ntkcz.cz
+  port: 443
+  nameSpace: /server
+themes:
+  - name: 'custom'
+ cache:
+    serverSide:
+            botCache:
+                    max: 1000
+                    timeToLive: 42100000
+                    allowStale: true
+           anonymousCache:
+                   max: 100
+                   timeToLive: 5000
+                   allowStrale: false
+
