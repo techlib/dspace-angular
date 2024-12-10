@@ -1,0 +1,79 @@
+<!--<div id="RA" >
+Test data: <br>
+<br>label json = |{{label |json}}|
+<br>label = |{{label}}|
+-->
+
+<!-- <br>{{ console.log( "label=", label ) }} -->
+
+<!-- <div>
+ <br>linktext= {{linktext |json}}
+ <br>separator= {{separator |json}}
+ <br>mdValues= {{mdValues |json}}
+-->
+
+<!--  <br>mdValues value = {{mdValues[0].value |json}}
+--> 
+<!-- {{(typeof(mdValues.value))}}
+-->
+<!-- </div> -->
+
+<ds-metadata-field-wrapper [label]="label | translate">
+### RA - metadata-field [wrapper]
+    <a class="dont-break-out" *ngFor="let mdValue of mdValues; let last=last;" [href]="mdValue.value">
+
+      <div *ngIf="label  === 'item.page.license' ">
+
+        <span  *ngIf="mdValue.value" >
+
+          <img *ngIf="mdValue.value.includes('creativecommons.org/licenses')"  width="20" height="25"
+          src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo" >
+
+          <img *ngIf="mdValue.value.includes('by')"  width="20" height="25"
+          src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-by">
+
+          <img *ngIf="mdValue.value.includes('nc')"  width="20" height="25"
+          src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-nc">
+
+          <img *ngIf="mdValue.value.includes('nd')"  width="20" height="25"
+          src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-nd">
+
+          <img *ngIf="mdValue.value.includes('sa')"  width="20" height="25"
+          src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-sa">
+
+
+          <span><b>
+          
+          <span *ngIf="mdValue.value.includes('NA')"> N/A </span>
+
+          <span *ngIf="mdValue.value.includes('creativecommons.org/licenses')"> CC</span>
+
+          <span *ngIf="mdValue.value.includes('by')">-BY</span>
+
+          <span *ngIf="mdValue.value.includes('nc')">-NC</span>
+
+          <span *ngIf="mdValue.value.includes('nd')">-ND</span>
+
+          <span *ngIf="mdValue.value.includes('sa')">-SA</span>
+          
+          <span *ngIf="mdValue.value.includes('4.0')"> 4.0</span>
+
+          <span *ngIf="mdValue.value.includes('3.0')"> 3.0</span>
+          
+          </b></span>
+
+       </span>
+       
+       <p> <img width="200px"  src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.eu.png"> </p>
+
+
+       </div>
+
+       <span style="display:none">{{ linktext || mdValue.value }} </span>
+       <span *ngIf="!last" [innerHTML]="separator"></span>
+    </a>
+<!--      {{ linktext || mdValue.value }} <span *ngIf="!last" [innerHTML]="separator"></span>
+-->
+
+
+</ds-metadata-field-wrapper>
