@@ -2834,7 +2834,7 @@
 
   "loading.top-level-communities": "Loading top-level communities...",
 
-  "login.form.email": "Email address",
+  "login.form.email": "NTK Username",
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
@@ -4856,7 +4856,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  title: "DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5367,4 +5367,20 @@
   "process.overview.unknown.user": "Unknown",
 
   "browse.search-form.placeholder": "Search the repository",
+
+  "publication.page.title-alternate": "Subtitle: ",
+
+  "item.page.identifier.doi": "DOI",
+
+  "item.page.identifier.isbn": "ISBN",
+
+  "item.page.identifier.issn": "ISSN",
+
+  "item.page.event.name": "Event name",
+
+  "item.page.event.dateLocation": "Date and place of the event",
+
+  "item.page.license": "License",
+
+  "item.page.orcid": "ORCID iD",
 }
