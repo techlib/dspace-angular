@@ -1,7 +1,8 @@
 <div class="container" *ngVar="(itemRD$ | async) as itemRD">
-### 10 01 2025 -  RA custom theme / item-page component ###
+### 01 2025 -  RA custom theme / item-page component ###
   <div class="item-page" *ngIf="itemRD?.hasSucceeded" @fadeInOut>
 
+    <!-- test data: -->
     <!--
     <p>itemRD is ok {{itemRD | json}}</p>
     <hr>
@@ -13,26 +14,59 @@
     </b> -->
 
     <div *ngIf="itemRD?.payload as item">
-      <ds-metadata-uri-values> RA metadata-uri </ds-metadata-uri-values>
+<!--      <ds-metadata-uri-values> RA metadata-uri </ds-metadata-uri-values>-->
 
       <ds-themed-item-alerts [item]="item"></ds-themed-item-alerts>
       <ds-item-versions-notice [item]="item"></ds-item-versions-notice>
       <ds-view-tracker [object]="item"></ds-view-tracker>
-      <ds-listable-object-component-loader *ngIf="!item.isWithdrawn || (isAdmin$|async)" [object]="item" [viewMode]="viewMode"></ds-listable-object-component-loader>
+      <ds-listable-object-component-loader *ngIf="!item.isWithdrawn || (isAdmin$|async)" [object]="item" [viewMode]="viewMode">
+      </ds-listable-object-component-loader>
 
-      <div *ngIf='item["metadata"]["dc.rights.license"]'>
-      <!-- -->
-         <h2>License</h2>
+<!--	<ds-generic-item-page-field [item]="item" [fields]="['dc.title']" style="border: blue 2px solid">-->
+<!--		<h2> generic component inner html ##+## </h2>-->
+<!--	</ds-generic-item-page-field>-->
+
+
+      <div *ngIf='item["metadata"]["dc.rights"]' class="item-page-field" style="#off#-border: blue 2px dashed">
+         <h2 class="simple-view-element-header">Rights</h2>
+<!--         <pre> {{ item["metadata"] | json }} </pre>-->
          <!-- <div>{{ itemRD["payload"]["metadata"]["dc.rights.license"][0]["value"] }}</div> -->
-         <div>{{ item["metadata"]["dc.rights.license"][0]["value"] }}</div>
+<!--         <div>Rights:{{ item["metadata"]["dc.rights"][0]["value"] }} </div>-->
+
+<!--      <div>-->
+        <a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights']; let last=last;" [href]="mdValue.value">
+
+         <span  *ngIf="mdValue.value" >
+
+          <img *ngIf="mdValue.value.includes('/c_f1cf')"  width="50" height="50"
+          src="assets/images/zamky_Partialy_closed_access_hodiny.png">
+
+          <img *ngIf="mdValue.value.includes('/c_14cb')"  width="50" height="50"
+          src="assets/images/zamky_Closed_access.png">
+
+          <img *ngIf="mdValue.value.includes('/c_abf2')"  width="50" height="50"
+          src="assets/images/zamky_Open_access.png">
+
+          <img *ngIf="mdValue.value.includes('/c_16ec')"  width="50" height="50"
+          src="assets/images/zamky_Partialy_closed_access_instituce.png">
+
+	 </span>
+        </a>
+<!--  </div>-->
+     </div>
+
+
+      <div *ngIf='item["metadata"]["dc.rights.license"]' class="item-page-field" style="#off#-border: red 2px dashed">
+         <h2 class="simple-view-element-header">License</h2>
+         <!-- <div>{{ itemRD["payload"]["metadata"]["dc.rights.license"][0]["value"] }}</div> -->
+<!--         <div>Link:{{ item["metadata"]["dc.rights.license"][0]["value"] }} </div>-->
 
 
     <!-- <a class="dont-break-out" *ngFor="let mdValue of mdValues; let last=last;" [href]="mdValue.value"> -->
-    <a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
+	<a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
 
-      <div> <!-- *ngIf="label  === 'item.page.license' "> -->
-
-        <span  *ngIf="mdValue.value" >
+<!--       <div>-->
+         <span  *ngIf="mdValue.value" >
 
           <!-- <img *ngIf="mdValue.value.includes('creativecommons.org/licenses')"  width="20" height="25"
           src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo" > -->
@@ -62,16 +96,14 @@
           src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/publicdomain.png">
 
 
-        </span>
-       </div>
+         </span>
+<!--       </div>-->
 
 <!--       <span style="display:none">{{ linktext || mdValue.value }} </span>
        <span *ngIf="!last" [innerHTML]="separator"></span>
 -->    
-      </a>
-
-
-      </div>
+	</a>
+    </div>
 
 
       <ds-item-versions class="mt-2" [item]="item" [displayActions]="false"></ds-item-versions>
