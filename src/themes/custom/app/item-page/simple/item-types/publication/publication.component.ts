@@ -14,7 +14,7 @@ import { PublicationComponent as BaseComponent } from '../../../../../../../app/
   // styleUrls: ['./publication.component.scss'],
   styleUrls: ['../../../../../../../app/item-page/simple/item-types/publication/publication.component.scss'],
   templateUrl: './publication.component.html',
-  // templateUrl: '../../../../../../../app/item-page/simple/item-types/publication/publication.component.html',
+  //templateUrl: '../../../../../../../app/item-page/simple/item-types/publication/publication.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PublicationComponent extends BaseComponent {
