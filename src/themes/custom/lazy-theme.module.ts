@@ -249,7 +249,7 @@ const DECLARATIONS = [
 
 @NgModule({
   imports: [
-    ThumbnailComponent,
+//    ThumbnailComponent,
     AdminRegistriesModule,
     AdminSearchModule,
     AdminWorkflowModuleModule,
