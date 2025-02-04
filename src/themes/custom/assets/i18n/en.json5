@@ -16,6 +16,10 @@
 
 "item.page.orcid": "ORCID iD",
 
+"item.page.relatedItem.title": "Related Item Title",
+
+"item.page.relatedItem.doi": "Related Item DOI",
+
 "login.form.email": "NTK Username",
 
 }
