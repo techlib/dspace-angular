@@ -16,6 +16,10 @@
 
 "item.page.orcid": "ORCID iD",
 
+"item.page.relatedItem.title": "Název souvisejícího zdroje",
+
+"item.page.relatedItem.doi": "DOI souvisejícího zdroje",
+
 "login.form.email": "Uživatelské jméno",
 
 }

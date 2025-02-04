@@ -14,10 +14,10 @@
   <ds-dso-edit-menu></ds-dso-edit-menu>
 </div>
 <div class="d-flex flex-row">
-  <ds-generic-item-page-field [item]="object"
+	<h3 class="display-inline"><ds-generic-item-page-field [item]="object"
     [fields]="['dc.title.alternative']"
      [label]="''">
-  </ds-generic-item-page-field>
+		</ds-generic-item-page-field></h3>
 </div>	
 <div class="row">
   <div class="col-xs-12 col-md-4">
@@ -34,14 +34,6 @@
       [fields]="['dc.rights.license']"
       [label]="'item.page.license'">
     </ds-item-page-uri-field> 
-    <hr>
-      <!-- <br>item={{item}}
-      <br>dc={{dc}} -->
-      
-      <!-- <br> <pre> object={{object | json}} </pre>
-  
--->
-    <hr>
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
@@ -67,6 +59,7 @@
     </ds-generic-item-page-field>
   </div>
   <div class="col-xs-12 col-md-7">
+  <div title="Genealogy">
     <ds-related-items
       [parentItem]="object"
       [relationType]="'isProjectOfPublication'"
@@ -82,17 +75,34 @@
       [relationType]="'isJournalIssueOfPublication'"
       [label]="'relationships.isJournalIssueOf' | translate">
     </ds-related-items>
+  </div>
+  <div title="Content description">
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.description']"
       [label]="'publication.page.description'">
     </ds-generic-item-page-field>
-
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="', '"
       [label]="'item.page.subject'">
     </ds-generic-item-page-field>
+  </div>
+  <div title="Content metadata">
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.language.iso']"
+      [label]="'item.preview.dc.language.iso'">
+    </ds-generic-item-page-field>
+     <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.type']"
+      [label]="'item.preview.dc.type'">
+     </ds-generic-item-page-field>
+     <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.relation.ispartofseries']"
+      [label]="'item.preview.dc.relation.ispartof'">
+    </ds-generic-item-page-field>
+  </div> 
+  <div title="Identifiers">
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
@@ -113,6 +123,8 @@
       [fields]="['dc.identifier.issn']"
       [label]="'item.page.identifier.issn'">
     </ds-generic-item-page-field>
+  </div>
+  <div title="Event">
     <ds-generic-item-page-field [item]="object"
       [fields]="['idr.event.nameOriginal']"
       [label]="'item.page.event.name'">
@@ -121,7 +133,17 @@
       [fields]="['idr.event.startDate', 'idr.event.location']"
       [label]="'item.page.event.dateLocation'">
     </ds-generic-item-page-field>
-
+  </div>
+  <div title="Related item">
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['relatedItem.title']"
+      [label]="'item.page.relatedItem.title'">
+    </ds-generic-item-page-field>
+     <ds-generic-item-page-field [item]="object"
+      [fields]="['relatedItem.identifier.doi']"
+      [label]="'item.page.relatedItem.doi'">
+    </ds-generic-item-page-field>
+  </div>
 
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
     <div>
