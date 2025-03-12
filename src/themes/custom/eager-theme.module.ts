@@ -59,6 +59,10 @@ import { BrowseEntryListElementComponent } from './app/shared/object-list/browse
 import { PersonComponent } from './app/entity-groups/research-entities/item-pages/person/person.component';
 import { LangSwitchComponent } from './app/shared/lang-switch/lang-switch.component';
 
+// RA new component <ds-ra>
+import { DsRaComponent } from './app/ds-ra/ds-ra.component'
+import { DsAccessIconComponent } from './app/ds-access-icon/ds-access-icon.component'
+
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -99,6 +103,8 @@ const DECLARATIONS = [
   EditItemSelectorComponent,
   LogInComponent,
   LangSwitchComponent,
+DsRaComponent,
+DsAccessIconComponent,
 ];
 
 @NgModule({
