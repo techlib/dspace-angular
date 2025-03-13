@@ -1,2 +1,45 @@
-<div><b>[Access ICON {{url}}]</b></div>
-<!-- {{items}} -->
+<!-- <div> <b>[Access ICON {{url}}]</b></div> -->
+
+<div *ngIf="url">
+    <a class="dont-break-out" [href]="url">
+
+      <img *ngIf="url.includes('/c_f1cf')"  width="50" height="50"
+      src="assets/images/zamky_Partialy_closed_access_hodiny.png">
+
+      <img *ngIf="url.includes('/c_14cb')"  width="50" height="50"
+      src="assets/images/zamky_Closed_access.png">
+
+      <img *ngIf="url.includes('/c_abf2')"  width="50" height="50"
+      src="assets/images/zamky_Open_access.png">
+
+      <img *ngIf="url.includes('/c_16ec')"  width="50" height="50"
+      src="assets/images/zamky_Partialy_closed_access_instituce.png">
+
+   </a>
+
+</div>
+
+<!--
+
+     <div>
+        <a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights']; let last=last;" [href]="mdValue.valu$
+
+         <span  *ngIf="mdValue.value" >
+
+          <img *ngIf="mdValue.value.includes('/c_f1cf')"  width="50" height="50"
+          src="assets/images/zamky_Partialy_closed_access_hodiny.png">
+
+          <img *ngIf="mdValue.value.includes('/c_14cb')"  width="50" height="50"
+          src="assets/images/zamky_Closed_access.png">
+
+          <img *ngIf="mdValue.value.includes('/c_abf2')"  width="50" height="50"
+          src="assets/images/zamky_Open_access.png">
+
+          <img *ngIf="mdValue.value.includes('/c_16ec')"  width="50" height="50"
+          src="assets/images/zamky_Partialy_closed_access_instituce.png">
+
+         </span>
+        </a>
+      </div>
+
+-->
