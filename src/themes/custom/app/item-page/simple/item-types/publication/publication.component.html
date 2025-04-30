@@ -124,15 +124,39 @@
       [label]="'item.page.identifier.issn'">
     </ds-generic-item-page-field>
   </div>
+  <div class="row">
+  <div class="col">
   <div title="Event">
+  <div class="row">
     <ds-generic-item-page-field [item]="object"
       [fields]="['idr.event.nameOriginal']"
       [label]="'item.page.event.name'">
     </ds-generic-item-page-field>
+  </div>
+  <div class="row">
+    <div class="col-3">
     <ds-generic-item-page-field [item]="object"
-      [fields]="['idr.event.startDate', 'idr.event.location']"
-      [label]="'item.page.event.dateLocation'">
+      [fields]="['idr.event.startDate']"
+      [label]="'item.page.event.dateFrom'">
     </ds-generic-item-page-field>
+    </div>
+    <div class="col-3">
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['idr.event.endDate']"
+      [label]="'item.page.event.dateTo'">
+    </ds-generic-item-page-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['idr.event.location']"
+      [label]="'item.page.event.location'">
+    </ds-generic-item-page-field>
+    </div>
+  </div>
+  </div>
+  </div>
   </div>
   <div title="Related item">
     <ds-generic-item-page-field [item]="object"
@@ -144,8 +168,9 @@
       [label]="'item.page.relatedItem.doi'">
     </ds-generic-item-page-field>
   </div>
-
+    <div title="Collections">
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
+    </div>
     <div>
       <a class="btn btn-outline-primary" role="button" [routerLink]="[itemPageRoute + '/full']">
         <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}

@@ -10,7 +10,11 @@
 
 "item.page.event.name": "Event name",
 
-"item.page.event.dateLocation": "Date and place of the event",
+"item.page.event.dateFrom": "Date from",
+
+"item.page.event.dateTo": "Date to",
+
+"item.page.event.location": "Event location",
 
 "item.page.license": "License",
 

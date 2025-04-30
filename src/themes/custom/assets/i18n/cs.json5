@@ -10,7 +10,11 @@
 
 "item.page.event.name": "Název akce",
 
-"item.page.event.dateLocation": "Datum a místo konání",
+"item.page.event.dateFrom": "Datum od",
+
+"item.page.event.dateTo": "Datum do",
+
+"item.page.event.location": "Místo události",
 
 "item.page.license": "Licence",
 
