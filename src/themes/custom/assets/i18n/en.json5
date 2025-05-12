@@ -24,6 +24,46 @@
 
 "item.page.relatedItem.doi": "Related Item DOI",
 
+"item.page.relation.ispartof": "Is Part Of",
+
+"item.page.relation.haspart": "Has Part",
+
+"item.page.relation.ispublishedin": "Is Published In",
+
+"item.page.relation.isreferencedby": "Is Referenced By",
+
+"item.page.relation.references": "References",
+
+"item.page.relation.iscitedby": "Is Cited By",
+
+"item.page.relation.cites": "Cites",
+
+"item.page.relation.issupplementto": "Is Supplement To",
+
+"item.page.relation.issupplementedby": "Is Supplemented By",
+
+"item.page.relation.isreviewedby": "Is Reviewed By",
+
+"item.page.relation.reviews": "Reviews",
+
+"item.page.relation.describes": "Describes",
+
+"item.page.relation.isdescribedby": "Is Described By",
+
+"item.page.relation.iscontinuedby": "Is Continued By",
+
+"item.page.relation.continues": "Continues",
+
+"item.page.relation.isversionof": "Is Version Of",
+
+"item.page.relation.hasversion": "Has Version",
+
+"item.page.relation.isvariantformof": "Is Variant Form Of",
+
+"item.page.relation.isoriginalformof": "Is Original Form Of",
+
+"item.page.relation.isrelatedto": "Is Related To",
+
 "login.form.email": "NTK Username",
 
 }

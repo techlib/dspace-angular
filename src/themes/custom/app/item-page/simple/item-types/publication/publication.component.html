@@ -19,7 +19,7 @@
      [label]="''">
 		</ds-generic-item-page-field></h3>
 </div>	
-<div class="row">
+<div class="row no-gutters">
   <div class="col-xs-12 col-md-4">
     <ng-container *ngIf="!(mediaViewer.image || mediaViewer.video)">
       <ds-metadata-field-wrapper [hideIfNoTextContent]="false">
@@ -124,10 +124,10 @@
       [label]="'item.page.identifier.issn'">
     </ds-generic-item-page-field>
   </div>
-  <div class="row">
-  <div class="col">
+  <div class="row no-gutters">
+  <div class="col no-gutters">
   <div title="Event">
-  <div class="row">
+  <div class="row no-gutters">
     <ds-generic-item-page-field [item]="object"
       [fields]="['idr.event.nameOriginal']"
       [label]="'item.page.event.name'">
@@ -159,6 +159,106 @@
   </div>
   </div>
   <div title="Related item">
+    <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.ispartof']"
+	   [label]="'item.page.relation.ispartof'">
+    </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.haspart']"
+	   [label]="'item.page.relation.haspart'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.ispublishedin']"
+	   [label]="'item.page.relation.ispublishedin'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isreferencedby']"
+	   [label]="'item.page.relation.isreferencedby'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.references']"
+         [label]="'item.page.relation.references'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.iscitedby']"
+         [label]="'item.page.relation.iscitedby'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.cites']"
+         [label]="'item.page.relation.cites'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.issupplementto']"
+         [label]="'item.page.relation.issupplementto'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.issupplementedby']"
+         [label]="'item.page.relation.issupplementedby'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isreviewedby']"
+         [label]="'item.page.relation.isreviewedby'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.reviews']"
+         [label]="'item.page.relation.reviews'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.describes']"
+         [label]="'item.page.relation.describes'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isdescribedby']"
+         [label]="'item.page.relation.isdescribedby'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.iscontinuedby']"
+         [label]="'item.page.relation.iscontinuedby'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.continues']"
+         [label]="'item.page.relation.continues'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isversionof']"
+         [label]="'item.page.relation.isversionof'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.hasversion']"
+         [label]="'item.page.relation.hasversion'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isvariantformof']"
+         [label]="'item.page.relation.isvariantformof'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isoriginalformof']"
+         [label]="'item.page.relation.isoriginalformof'">
+       </ds-item-page-uri-field>
+
+       <ds-item-page-uri-field [item]="object"
+         [fields]="['dc.relation.isrelatedto']"
+         [label]="'item.page.relation.isrelatedto'">
+       </ds-item-page-uri-field>
+<!--       
     <ds-generic-item-page-field [item]="object"
       [fields]="['relatedItem.title']"
       [label]="'item.page.relatedItem.title'">
@@ -167,7 +267,8 @@
       [fields]="['relatedItem.identifier.doi']"
       [label]="'item.page.relatedItem.doi'">
     </ds-generic-item-page-field>
-  </div>
+-->
+    </div>
     <div title="Collections">
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
     </div>
