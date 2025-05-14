@@ -10,11 +10,59 @@
 
 "item.page.event.name": "Název akce",
 
-"item.page.event.dateLocation": "Datum a místo konání",
+"item.page.event.dateFrom": "Datum od",
+
+"item.page.event.dateTo": "Datum do",
+
+"item.page.event.location": "Místo události",
 
 "item.page.license": "Licence",
 
 "item.page.orcid": "ORCID iD",
+
+"item.page.relatedItem.title": "Název souvisejícího zdroje",
+
+"item.page.relatedItem.doi": "DOI souvisejícího zdroje",
+
+"item.page.relation.ispartof": "Je součástí",
+
+"item.page.relation.haspart": "Má část/i",
+
+"item.page.relation.ispublishedin": "Je publikován v",
+
+"item.page.relation.isreferencedby": "Je na něj odkazováno z",
+
+"item.page.relation.references": "Odkazuje",
+
+"item.page.relation.iscitedby": "Je citován",
+
+"item.page.relation.cites": "Cituje",
+
+"item.page.relation.issupplementto": "Je doplňkem k",
+
+"item.page.relation.issupplementedby": "Má doplněk",
+
+"item.page.relation.isreviewedby": "Je recenzován",
+
+"item.page.relation.reviews": "Recenzuje",
+
+"item.page.relation.describes": "Popisuje",
+
+"item.page.relation.isdescribedby": "Je popsán",
+
+"item.page.relation.iscontinuedby": "Je pokračováním",
+
+"item.page.relation.continues": "Pokračuje",
+
+"item.page.relation.isversionof": "Je verzí",
+
+"item.page.relation.hasversion": "Má verzi",
+
+"item.page.relation.isvariantformof": "Je variantou",
+
+"item.page.relation.isoriginalformof": "Je původní variantou",
+
+"item.page.relation.isrelatedto": "Souvisí",
 
 "login.form.email": "Uživatelské jméno",
 
