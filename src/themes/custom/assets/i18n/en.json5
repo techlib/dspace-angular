@@ -2,6 +2,8 @@
 
 "publication.page.title-alternate": "Subtitle: ",
 
+"item.page.uri": "Identifier",
+
 "item.page.identifier.doi": "DOI",
 
 "item.page.identifier.isbn": "ISBN",
