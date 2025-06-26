@@ -38,6 +38,10 @@
     </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
     <ds-item-page-uri-field [item]="object"
+      [fields]="['idr.externalLocationURL']"
+      [label]="'item.page.externalLocation'">
+    </ds-item-page-uri-field> 
+    <ds-item-page-uri-field [item]="object"
       [fields]="['dc.rights.license']"
       [label]="'item.page.license'">
     </ds-item-page-uri-field> 
