@@ -28,6 +28,10 @@
       [fields]="['project.identifier.funder']"
       [label]="'project.page.funder'">
     </ds-generic-item-page-field>
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.uri']"
+      [label]="'item.page.uri'">
+    </ds-item-page-uri-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.identifier']"
       [label]="'project.page.id'">
@@ -43,12 +47,12 @@
       [relationType]="'isPersonOfProject'"
       [label]="'relationships.isPersonOf' | translate">
     </ds-related-items>
-    <ds-related-items
+<!--    <ds-related-items
       [parentItem]="object"
       [relationType]="'isPublicationOfProject'"
       [label]="'relationships.isPublicationOf' | translate">
     </ds-related-items>
-    <ds-related-items
+-->    <ds-related-items
       [parentItem]="object"
       [relationType]="'isOrgUnitOfProject'"
       [label]="'relationships.isOrgUnitOf' | translate">
@@ -61,10 +65,19 @@
       [fields]="['dc.subject']"
       [label]="'project.page.keyword'">
     </ds-generic-item-page-field>
-    <div>
-      <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']">
-        {{"item.page.link.full" | translate}}
-      </a>
-    </div>
   </div>
 </div>
+  <div class="d-flex flex-row justify-content-center align-items-center">
+    <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']">
+      {{"item.page.link.full" | translate}}
+    </a>
+  </div>
+  <div class="mt-5 w-100">
+    <ds-tabbed-related-entities-search  [item]="object"
+                                        [relationTypes]="[{
+                                          label: 'isProjectOfPublication',
+                                          filter: 'isProjectOfPublication',
+                                          configuration: 'default-relationships'
+                                        }]">
+    </ds-tabbed-related-entities-search>
+  </div>

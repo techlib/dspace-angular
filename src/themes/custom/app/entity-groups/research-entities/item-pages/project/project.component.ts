@@ -13,8 +13,8 @@ import { Context } from '../../../../../../../app/core/shared/context.model';
   selector: 'ds-project',
   // styleUrls: ['./project.component.scss'],
   styleUrls: ['../../../../../../../app/entity-groups/research-entities/item-pages/project/project.component.scss'],
-  // templateUrl: './project.component.html',
-  templateUrl: '../../../../../../../app/entity-groups/research-entities/item-pages/project/project.component.html',
+  templateUrl: './project.component.html',
+	//templateUrl: '../../../../../../../app/entity-groups/research-entities/item-pages/project/project.component.html',
 })
 export class ProjectComponent extends BaseComponent {
 }

@@ -13,8 +13,8 @@ import { Context } from '../../../../../../../app/core/shared/context.model';
   selector: 'ds-org-unit',
   // styleUrls: ['./org-unit.component.scss'],
   styleUrls: ['../../../../../../../app/entity-groups/research-entities/item-pages/org-unit/org-unit.component.scss'],
-  // templateUrl: './org-unit.component.html',
-  templateUrl: '../../../../../../../app/entity-groups/research-entities/item-pages/org-unit/org-unit.component.html',
+  templateUrl: './org-unit.component.html',
+	// templateUrl: '../../../../../../../app/entity-groups/research-entities/item-pages/org-unit/org-unit.component.html',
 })
 export class OrgUnitComponent extends BaseComponent {
 }

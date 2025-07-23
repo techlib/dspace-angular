@@ -68,6 +68,8 @@
 
 "item.page.externalLocation": "External file URL",
 
+"item.page.relationships.isOrgUnitOfPublication": "Publication",
+
 "login.form.email": "NTK Username",
 
 }
