@@ -11,7 +11,9 @@
 
 <div class="row">
 <!--  <ds-access-icon [url]='dso.metadata["dc.rights"][0].value'></ds-access-icon> -->
-  <ds-access-icon *ngIf="dso.metadata['dc.rights']; else noAccessIconUrl" [url]='dso.metadata["dc.rights"][0].value'></ds-access-icon>
+<!--  <ds-access-icon *ngIf="dso.metadata['dc.rights']; else noAccessIconUrl" [url]='dso.metadata["dc.rights"][0].value' [theitem]='dso'>-->
+  <ds-access-icon *ngIf="dso.metadata['dc.rights']; else noAccessIconUrl"  [url]='dso.metadata["dc.rights"][0].value' [theitem]='dso["type"]'>
+  </ds-access-icon>
   <ng-template #noAccessIconUrl>
     <div style="width: 50px; height: 50px"></div>
   </ng-template>

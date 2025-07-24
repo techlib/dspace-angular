@@ -18,13 +18,15 @@ import { Item as BaseComponent } from '../../../../app/core/shared/item.model';
 export class DsAccessIconComponent extends BaseComponent  {
 
   @Input() url;
+  @Input() theitem
 
   // private itemDataService: ItemDataService;
 
   /**
    * Initialize instance variables
    */
-  ngOnInit(): void { return; 
+  ngOnInit(): void { 
+    //return; 
 
     console.log("<ds-access-icon> init");
     console.log("Item Access Icon: ", this )
