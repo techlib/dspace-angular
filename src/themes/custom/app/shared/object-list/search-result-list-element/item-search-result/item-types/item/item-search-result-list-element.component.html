@@ -1,13 +1,3 @@
-<!--
-<div class="row">
-    <b>## RA ACCESS</b>
-    <pre>dc.rights = [[ {{ | json}} ]]</pre>
-    <ds-access-icon [url]='dso.metadata["dc.rights"][0].value'></ds-access-icon>
-</div>
-
-<div *ngIf='dso.metadata["dspace.entity.type"][0].value == "Publication"' class="row">
-<pre>{{ dso.metadata["dspace.entity.type"][0].value | json}}</pre>
--->
 
 <div class="row">
 
@@ -37,7 +27,7 @@
     </div>
   </ng-template>
 
-
+<!-- Below the original call of the Thumbnail component -->
 <!--
     <div *ngIf="showThumbnails" class="col-3 col-md-2">
     <a *ngIf="linkType != linkTypes.None" [target]="(linkType == linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType == linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
@@ -52,10 +42,6 @@
     </ds-thumbnail>
 
     </span>
--->
-
-<!--
-    <ds-access-icon [url]='dso.metadata["dc.rights"][0].value'></ds-access-icon>
 -->
 
 <!--  </div> -->
