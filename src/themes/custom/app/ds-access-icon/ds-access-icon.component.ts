@@ -18,7 +18,7 @@ import { Item as BaseComponent } from '../../../../app/core/shared/item.model';
 export class DsAccessIconComponent extends BaseComponent  {
 
   @Input() url;
-  @Input() theitem
+  @Input() entitytype;
 
   // private itemDataService: ItemDataService;
 
@@ -36,7 +36,7 @@ export class DsAccessIconComponent extends BaseComponent  {
     // console.log("id:", this.id );
     // console.log("itemURL:", this.itemUrl );
     // console.log("find by id:", this.items.findById('b865d869-6038-410a-bc27-5a6c74900dca'))
-    
+
     // console.log("", this.)
 
   }

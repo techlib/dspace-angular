@@ -10,13 +10,34 @@
 -->
 
 <div class="row">
-<!--  <ds-access-icon [url]='dso.metadata["dc.rights"][0].value'></ds-access-icon> -->
-<!--  <ds-access-icon *ngIf="dso.metadata['dc.rights']; else noAccessIconUrl" [url]='dso.metadata["dc.rights"][0].value' [theitem]='dso'>-->
-  <ds-access-icon *ngIf="dso.metadata['dc.rights']; else noAccessIconUrl"  [url]='dso.metadata["dc.rights"][0].value' [theitem]='dso["type"]'>
+
+  <ds-access-icon *ngIf="dso.metadata['dc.rights']; else noAccessIconUrl"   
+	[url]='dso.metadata["dc.rights"][0].value' 
+	[entitytype]='dso.metadata["dspace.entity.type"][0].value'>
   </ds-access-icon>
+
   <ng-template #noAccessIconUrl>
-    <div style="width: 50px; height: 50px"></div>
+<!--   entity type = ( {{ dso.metadata["dspace.entity.type"][0].value }} )-->
+   
+<!--   dso obj = <pre>{{dso | json}}</pre>-->
+    <div style="width: 50px; height: 50px; ___border: 1px dashed red;">
+<!--	<div *ngIf='dso.metadata["dspace.entity.type"][0].value === "Project"`> ( Project ) </div>-->
+        <div *ngIf='dso.metadata["dspace.entity.type"][0].value === "Person"'>
+	      <img width="50" height="50" alt="Person"
+		      src="assets/images/50x50_icon_osoba.png">
+	</div>
+        <div *ngIf='dso.metadata["dspace.entity.type"][0].value === "OrgUnit"'>
+	      <img width="50" height="50" alt="Organizační jednotka"
+		      src="assets/images/50x50_icon_org.png">
+	</div>
+        <div *ngIf='dso.metadata["dspace.entity.type"][0].value === "Project"'>
+	      <img width="50" height="50" alt="Project"
+		      src="assets/images/50x50_icon_proj.png">
+	</div>
+    </div>
   </ng-template>
+
+
 <!--
     <div *ngIf="showThumbnails" class="col-3 col-md-2">
     <a *ngIf="linkType != linkTypes.None" [target]="(linkType == linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType == linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
