@@ -33,6 +33,7 @@
          <!-- <div>{{ itemRD["payload"]["metadata"]["dc.rights.license"][0]["value"] }}</div> -->
 <!--         <div>Rights:{{ item["metadata"]["dc.rights"][0]["value"] }} </div>-->
 
+<!--
       <div>
         <a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights']; let last=last;" [href]="mdValue.value">
 
@@ -50,60 +51,61 @@
           <img *ngIf="mdValue.value.includes('/c_16ec')"  width="50" height="50"
           src="assets/images/zamky_Partialy_closed_access_instituce.png">
 
-	 </span>
+          </span>
         </a>
       </div>
+-->
 <!--     </div>-->
 
+<!--      <div *ngIf='item["metadata"]["dc.rights.license"]' class="item-page-field" style="#off#-border: red 2px dashed">-->
+<!--         <h2 class="simple-view-element-header">License</h2>-->
 
-      <div *ngIf='item["metadata"]["dc.rights.license"]' class="item-page-field" style="#off#-border: red 2px dashed">
-         <h2 class="simple-view-element-header">License</h2>
          <!-- <div>{{ itemRD["payload"]["metadata"]["dc.rights.license"][0]["value"] }}</div> -->
 <!--         <div>Link:{{ item["metadata"]["dc.rights.license"][0]["value"] }} </div>-->
 
 
     <!-- <a class="dont-break-out" *ngFor="let mdValue of mdValues; let last=last;" [href]="mdValue.value"> -->
-	<a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
+<!--	<a class="dont-break-out" *ngFor="let mdValue of item['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">-->
 
 <!--       <div>-->
-         <span  *ngIf="mdValue.value" >
+<!--         <span  *ngIf="mdValue.value" >-->
 
           <!-- <img *ngIf="mdValue.value.includes('creativecommons.org/licenses')"  width="20" height="25"
           src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo" > -->
 
-          <img *ngIf="mdValue.value.includes('/by/')"  width="90" height="31"
-	  src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png">
-	  
-          <img *ngIf="mdValue.value.includes('/nc/')"  width="90" height="31"
-	  src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png">
-
-          <img *ngIf="mdValue.value.includes('/nd/')"  width="90" height="31"
-	  src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nd.png">
-
-          <img *ngIf="mdValue.value.includes('/sa/')"  width="90" height="31"
-          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png">
-
-          <img *ngIf="mdValue.value.includes('/by-nc-sa/')"  width="90" height="31"
-          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png">
-
-          <img *ngIf="mdValue.value.includes('/by-nc-nd/')"  width="90" height="31"
-          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png">
-
-          <img *ngIf="mdValue.value.includes('/by-cc0d/')"  width="90" height="31"
-          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png">
-
-          <img *ngIf="mdValue.value.includes('/publicdomain/')"  width="90" height="31"
-          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/publicdomain.png">
-
-
-         </span>
+<!--          <img *ngIf="mdValue.value.includes('/by/')"  width="90" height="31"-->
+<!--	  src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png">-->
+<!--	  -->
+<!--          <img *ngIf="mdValue.value.includes('/nc/')"  width="90" height="31"-->
+<!--	  src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png">-->
+<!---->
+<!--          <img *ngIf="mdValue.value.includes('/nd/')"  width="90" height="31"-->
+<!--	  src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nd.png">-->
+<!---->
+<!--          <img *ngIf="mdValue.value.includes('/sa/')"  width="90" height="31"-->
+<!--          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png">-->
+<!---->
+<!--          <img *ngIf="mdValue.value.includes('/by-nc-sa/')"  width="90" height="31"-->
+<!--          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png">-->
+<!---->
+<!--          <img *ngIf="mdValue.value.includes('/by-nc-nd/')"  width="90" height="31"-->
+<!--          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png">-->
+<!---->
+<!--          <img *ngIf="mdValue.value.includes('/by-cc0d/')"  width="90" height="31"-->
+<!--          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png">-->
+<!---->
+<!--          <img *ngIf="mdValue.value.includes('/publicdomain/')"  width="90" height="31"-->
+<!--          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/publicdomain.png">-->
+<!---->
+<!---->
+<!--         </span>-->
 <!--       </div>-->
 
 <!--       <span style="display:none">{{ linktext || mdValue.value }} </span>
        <span *ngIf="!last" [innerHTML]="separator"></span>
 -->    
-	</a>
-    </div>
+<!--	</a>-->
+<!--    </div>-->
 
 
       <ds-item-versions class="mt-2" [item]="item" [displayActions]="false"></ds-item-versions>
