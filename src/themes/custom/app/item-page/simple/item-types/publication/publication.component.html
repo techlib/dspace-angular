@@ -38,13 +38,59 @@
     </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
     <ds-item-page-uri-field [item]="object"
-      [fields]="['idr.externalLocationURL']"
+      [fields]="['idr.externalLocationURL']" 
       [label]="'item.page.externalLocation'">
     </ds-item-page-uri-field> 
+
     <ds-item-page-uri-field [item]="object"
-      [fields]="['dc.rights.license']"
+      [fields]="['dc.rights.license']" 
       [label]="'item.page.license'">
     </ds-item-page-uri-field> 
+
+    <div class="item-page-field">
+	<div class="simple-view-element">
+	[#RA: Here is the own license code section] <br>
+	<h2 class="simple-view-element-header ng-star-inserted" style="font-size: 1.25rem;">License</h2>
+<!--	<pre> {{object | json}}  </pre>-->
+<!--	{{ object['metadata']['dc.rights.license'].value }}-->
+        <a class="dont-break-out" *ngFor="let mdValue of object['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
+<!--         mdValue = ({{mdValue.value}})-->
+	 <span  *ngIf="mdValue.value" >
+<!--	  [#RA: ToDo add other CC badges]-->
+<!--	  [#RA: get them here https://creativecommons.org/mission/downloads/]-->
+
+          <!-- <img *ngIf="mdValue.value.includes('creativecommons.org/licenses')"  width="20" height="25"
+          src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo" > -->
+
+          <img *ngIf="mdValue.value.includes('/by/')"  width="90" height="31"
+          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png">
+          
+          <img *ngIf="mdValue.value.includes('/nc/')"  width="90" height="31"
+          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png">
+
+          <img *ngIf="mdValue.value.includes('/nd/')"  width="90" height="31"
+          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nd.png">
+
+          <img *ngIf="mdValue.value.includes('/sa/')"  width="90" height="31"
+          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png">
+
+          <img *ngIf="mdValue.value.includes('/by-nc-sa/')"  width="90" height="31"
+          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png">
+
+          <img *ngIf="mdValue.value.includes('/by-nc-nd/')"  width="90" height="31"
+          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png">
+
+          <img *ngIf="mdValue.value.includes('/by-cc0d/')"  width="90" height="31"
+          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png">
+
+          <img *ngIf="mdValue.value.includes('/publicdomain/')"  width="90" height="31"
+          src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/publicdomain.png">
+          </span>
+	 </a>
+
+	</div>
+    </div>
+
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
