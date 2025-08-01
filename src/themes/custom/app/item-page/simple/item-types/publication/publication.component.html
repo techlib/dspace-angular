@@ -49,13 +49,20 @@
 
     <div class="item-page-field">
       <div class="simple-view-element">
-      [#RA: Here is the own license code section] <br>
+      <!-- [#RA: Here is the own license code section] <br> -->
       <h2 class="simple-view-element-header ng-star-inserted" style="font-size: 1.25rem;">License</h2>
 <!--	<pre> {{object | json}}  </pre>-->
-<!--	{{ object['metadata']['dc.rights.license'].value }}-->
+
+      <!-- obj license = [ <pre>{{ object['metadata']['dc.rights.license'] | json }}</pre> ] <br> -->
+
+      <div *ngIf="!( object && object['metadata']['dc.rights.license'])" class="itooltip">                                                                                                             
+              <img  width="90" height="31"
+              src="assets/images/ikona_az.svg">
+        <span class="itooltiptext">zákon č.<br>121/2000 Sb.</span>                                                                                        
+      </div>                                                                                                                             
 
       <a class="dont-break-out" *ngFor="let mdValue of object['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
-<!--         mdValue = ({{mdValue.value}})-->
+      <!-- mdValue = |{{mdValue.value}}| <br> -->
 	    <!-- <span  *ngIf="mdValue.value" > -->
 <!--	  [#RA: ToDo add other CC badges]-->
 <!--	  [#RA: get them here https://creativecommons.org/mission/downloads/]-->
@@ -64,12 +71,6 @@
           src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo" > -->
 
 <!--#RA: add tooltip to license-->
-
-        <div *ngIf="!mdValue.value" class="itooltip">                                                                                                             
-                <img  width="90" height="31"
-                src="https://">
-          <span class="itooltiptext">No license, ntk image</span>                                                                                        
-        </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/by/')" class="itooltip">                                                                                                             
                 <img  width="90" height="31"
@@ -80,43 +81,43 @@
         <div *ngIf="mdValue.value.includes('/by-nc/')" class="itooltip">                                                                                                             
                 <img  width="90" height="31"
                 src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png">
-          <span class="itooltiptext"> CC BY NC </span>                                                                                        
+          <span class="itooltiptext"> CC BY-NC </span>                                                                                        
         </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/by-nd/')" class="itooltip">                                                                                                             
                 <img  width="90" height="31"
                 src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nd.png">
-          <span class="itooltiptext"> CC BY ND </span>                                                                                        
+          <span class="itooltiptext"> CC BY-ND </span>                                                                                        
         </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/by-sa/')" class="itooltip">   
                 <img   width="90" height="31"
                 src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png">
-          <span class="itooltiptext"> CC BY SA </span>                                                                                        
+          <span class="itooltiptext"> CC BY-SA </span>                                                                                        
         </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/by-nc-sa/')" class="itooltip">   
                 <img   width="90" height="31"
                 src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png">
-          <span class="itooltiptext"> CC BY NC SA </span>                                                                                        
+          <span class="itooltiptext"> CC BY-NC-SA </span>                                                                                        
         </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/by-nc-nd/')" class="itooltip">   
                 <img   width="90" height="31"
                 src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png">
-          <span class="itooltiptext"> CC BY NC ND </span>                                                                                        
+          <span class="itooltiptext"> CC BY-NC-ND </span>                                                                                        
         </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/by-cc0d/')" class="itooltip">   
                 <img   width="90" height="31"
                 src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png">
-          <span class="itooltiptext"> CC 0 </span>                                                                                        
+          <span class="itooltiptext"> CC0 </span>                                                                                        
         </div>                                                                                                                             
 
         <div *ngIf="mdValue.value.includes('/publicdomain/')"  class="itooltip">   
                 <img  width="90" height="31"
                 src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/publicdomain.png">
-          <span class="itooltiptext"> ----- </span>                                                                                        
+          <span class="itooltiptext"> publicdomain </span>                                                                                        
         </div>                                                                                                                             
 
           <!-- </span> -->
