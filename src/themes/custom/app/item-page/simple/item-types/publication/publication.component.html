@@ -42,18 +42,19 @@
       [label]="'item.page.externalLocation'">
     </ds-item-page-uri-field> 
 
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['dc.rights.license']" 
-      [label]="'item.page.license'">
-    </ds-item-page-uri-field> 
 
     <div class="item-page-field">
       <div class="simple-view-element" style="margin-bottom: 15px;">
       <!-- [#RA: Here is the own license code section] <br> -->
-      <h2 class="simple-view-element-header ng-star-inserted" style="font-size: 1.25rem;">License</h2>
+      <h2 class="simple-view-element-header ng-star-inserted" style="font-size: 1.25rem;">
+	{{ 'publication.page.license-alternate' | translate }}
+      </h2>
 <!--	<pre> {{object | json}}  </pre>-->
 
-      <!-- obj license = [ <pre>{{ object['metadata']['dc.rights.license'] | json }}</pre> ] <br> -->
+      license url: 
+	<a href="{{object['metadata']['dc.rights.license'][0].value}}">
+	{{object['metadata']['dc.rights.license'][0].value}} </a>
+       <br>
 
       <div *ngIf="!( object && object['metadata']['dc.rights.license'])" class="itooltip">                                                                                                             
               <img  width="90" height="31"
