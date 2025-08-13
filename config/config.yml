@@ -1,7 +1,0 @@
-rest:
-  ssl: true
-  host: dspace.dev.ntkcz.cz
-  port: 443
-  nameSpace: /server
-themes:
-  - name: custom
