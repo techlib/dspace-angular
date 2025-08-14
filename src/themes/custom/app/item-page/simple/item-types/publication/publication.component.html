@@ -51,15 +51,24 @@
       </h2>
 <!--	<pre> {{object | json}}  </pre>-->
 
-      license url: 
-	<a href="{{object['metadata']['dc.rights.license'][0].value}}">
-	{{object['metadata']['dc.rights.license'][0].value}} </a>
-       <br>
+<!--      License URL: -->
+<!--	<a href="{{object['metadata']['dc.rights.license'][0].value}}">-->
+<!--	|{{object['metadata']['dc.rights.license'][0].value}}|</a>-->
+<!--       <br>-->
+<!--      *ngIf="!( object && object['metadata']['dc.rights.license']) 
+          || object?.metadata?.['dc.rights.license'] === 'none'" -->
 
-      <div *ngIf="!( object && object['metadata']['dc.rights.license'])" class="itooltip">                                                                                                             
+<!--      To detect UI language use this varaible inited in the .ts -->
+<!--      <span> LANG:{{ translatePublicationPubService.currentLang }} </span>-->
+      
+      <div *ngIf="!( object && object['metadata']['dc.rights.license']) 
+          || object?.metadata?.['dc.rights.license'][0].value === 'none'" 
+      class="itooltip">                                                                                                 
               <img  width="90" height="31"
-              src="assets/images/ikona_az.svg">
-        <span class="itooltiptext">zákon č.<br>121/2000 Sb.</span>                                                                                        
+              src="assets/custom/images/AZ_SVG_EN_2.svg">
+        <span class="itooltiptext">{{'publication.page.license-tooltip-law-act' | translate}} </span>                                                                                        
+<!--        <span class="itooltiptext" [innerHTML]="{{'publication.page.license-tooltip-law-act' | translate}}"></span>                                                                                        -->
+<!--        <span class="itooltiptext">zákon č.<br>121/2000 Sb.</span>                                                                                        -->
       </div>                                                                                                                             
 
       <a class="dont-break-out" *ngFor="let mdValue of object['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
@@ -71,12 +80,12 @@
           <!-- <img *ngIf="mdValue.value.includes('creativecommons.org/licenses')"  width="20" height="25"
           src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/icons/cc-icons.svg#cc-logo" > -->
 
-<!--#RA: add tooltip to license-->
-        <div *ngIf="mdValue.value.includes('none')" class="itooltip">                                                                                                             
-                <img  width="90" height="31"
-                src="assets/images/ikona_az.svg">
-          <span class="itooltiptext">zákon č.<br>121/2000 Sb.</span>   
-        </div>                                                                                                                             
+<!--#RA: add tooltip to NO license, URL=none-->
+<!--        <div *ngIf="mdValue.value.includes('none')" class="itooltip">                                                                                                             -->
+<!--                <img  width="90" height="31"-->
+<!--                src="assets/images/ikona_az.svg">-->
+<!--          <span class="itooltiptext">zákon č.<br>121/2000 Sb.</span>   -->
+<!--        </div>                                                                                                                             -->
 
 
 
