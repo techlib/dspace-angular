@@ -4,8 +4,11 @@ import { Component, Input } from '@angular/core';
 // import { ItemDataService } from '../../../../app/core/data/item-data.service';
 // import { ItemPageComponent as BaseComponent } from '../../../../app/item-page/simple/item-page.component';
 // import { ItemDataService } from '../../core/data/item-data.service';
-
 import { Item as BaseComponent } from '../../../../app/core/shared/item.model';
+
+// #RA added to get current UI language - required public TranslateService (singleton service to translate is not public !!!)
+//import { TranslateService } from '@ngx-translate/core';
+//import { inject } from '@angular/core';
 
 @Component({
   // standalone: true,
@@ -19,7 +22,11 @@ export class DsAccessIconComponent extends BaseComponent  {
 
   @Input() url;
   @Input() entitytype;
-  @Input() tooltip;
+  // @Input() tooltip;
+
+  // #RA added to get current UI language - required public TranslateService (singleton service to translate is not public !!!).
+  // public translatePublicationPubService = inject(TranslateService);
+
 
   // private itemDataService: ItemDataService;
 

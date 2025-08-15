@@ -1,5 +1,11 @@
 {
 
+"access-icon.tooltip-open": "Otevřený přístup",
+"access-icon.tooltip-closed": "Pouze metadata",
+"access-icon.tooltip-Partialy_closed_access_hodiny": "Odložené zveřejnění",
+"access-icon.tooltip-Partialy_closed_access_instituce": "Omezený přístup",
+
+
 "publication.page.license-tooltip-law-act": "zákon č.\n 121/2000 Sb.",
 
 "publication.page.license-alternate": "Licence: ",
