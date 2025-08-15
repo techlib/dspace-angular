@@ -19,6 +19,7 @@ export class DsAccessIconComponent extends BaseComponent  {
 
   @Input() url;
   @Input() entitytype;
+  @Input() tooltip;
 
   // private itemDataService: ItemDataService;
 
