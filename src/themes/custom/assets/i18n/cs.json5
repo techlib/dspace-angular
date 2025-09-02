@@ -1,10 +1,12 @@
 {
 
 "access-icon.tooltip-open": "Otevřený přístup",
-"access-icon.tooltip-closed": "Pouze metadata",
-"access-icon.tooltip-Partialy_closed_access_hodiny": "Odložené zveřejnění",
-"access-icon.tooltip-Partialy_closed_access_instituce": "Omezený přístup",
 
+"access-icon.tooltip-closed": "Pouze metadata",
+
+"access-icon.tooltip-Partialy_closed_access_hodiny": "Odložené zveřejnění",
+
+"access-icon.tooltip-Partialy_closed_access_instituce": "Omezený přístup",
 
 "publication.page.license-tooltip-law-act": "zákon č.\n 121/2000 Sb.",
 
@@ -85,4 +87,23 @@
 "submission.sections.describe.relationship-lookup.close": "Potvrdit",
 
 "footer.link.manual-link": "Uživatelský manuál",
+
+"submission.sections.submit.progressbar.roles.stepone": "Přispěvatelé",
+
+"submission.sections.submit.progressbar.basic.stepone": "Základní informace o dokumentu",
+  
+"submission.sections.submit.progressbar.content.stepone": "Popis obsahu",
+
+"submission.sections.submit.progressbar.events.stepone": "Související akce",
+
+"submission.sections.submit.progressbar.relatedItem.stepone": "Související zdroj",
+
+"submission.sections.submit.progressbar.rights.stepone": "Přístupy a licence",
+
+"submission.sections.submit.progressbar.person.stepone": "Osoba",
+
+"submission.sections.submit.progressbar.project.stepone": "Projekt",
+
+"submission.sections.submit.progressbar.organization.stepone": "Organizace",
+
 }

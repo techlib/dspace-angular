@@ -1,9 +1,11 @@
 {
 "access-icon.tooltip-open": "Open Access",
-"access-icon.tooltip-closed": "Metadata Only Access",
-"access-icon.tooltip-Partialy_closed_access_hodiny": "Embargoed Access",
-"access-icon.tooltip-Partialy_closed_access_instituce": "Restricted Access",
 
+"access-icon.tooltip-closed": "Metadata Only Access",
+
+"access-icon.tooltip-Partialy_closed_access_hodiny": "Embargoed Access",
+
+"access-icon.tooltip-Partialy_closed_access_instituce": "Restricted Access",
 
 "publication.page.license-tooltip-law-act": "Act No. 121/2000 Coll.",
 
@@ -84,5 +86,23 @@
 "submission.sections.describe.relationship-lookup.close": "Confirm",
 
 "footer.link.manual-link": "Uživatelský manuál",
+
+"submission.sections.submit.progressbar.roles.stepone": "Contributors",
+
+"submission.sections.submit.progressbar.basic.stepone": "Basic information about the document",
+  
+"submission.sections.submit.progressbar.content.stepone": "Content description",
+
+"submission.sections.submit.progressbar.events.stepone": "Related Event",
+
+"submission.sections.submit.progressbar.relatedItem.stepone": "Related Item",
+
+"submission.sections.submit.progressbar.rights.stepone": "Access and Licence",
+
+"submission.sections.submit.progressbar.person.stepone": "Person",
+
+"submission.sections.submit.progressbar.project.stepone": "Project",
+
+"submission.sections.submit.progressbar.organization.stepone": "Organization",
 
 }

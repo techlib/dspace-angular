@@ -1306,13 +1306,17 @@
 
   "collection.listelement.badge": "Kolekce",
 
+  "collection.page.browse.recent.head": "Nedávné příspěvky",
+
+  "collection.page.browse.recent.empty": "Žádné záznamy ke zobrazení",
+
   "collection.logo": "Collection logo",
 
   "collection.page.browse.search.head": "Search",
 
   "collection.page.edit": "Upravit tuto kolekci",
 
-  "collection.page.handle": "Permanentní URI k tomuto záznamu",
+  "collection.page.handle": "Permanentní URI k této kolekci",
 
   "collection.page.license": "Licence",
 
@@ -1544,7 +1548,7 @@
 
   "community.page.edit": "Upravit tuto komunitu",
 
-  "community.page.handle": "Stálý URI pro tuto komunitu",
+  "community.page.handle": "Permanentní URI k této komunitě",
 
   "community.page.license": "Licence",
 
@@ -4788,6 +4792,8 @@
 
   "submission.import-external.source.sherpaPublisher": "SHERPA Publishers",
 
+  "submission.import-external.source.openAIREFunding": "Funding OpenAIRE API",
+  
   "submission.import-external.source.openaire": "OpenAIRE Authors",
 
   "submission.import-external.source.openaireTitle": "OpenAIRE Titles",
@@ -5212,7 +5218,9 @@
 
   "submission.sections.submit.progressbar.describe.steptwo": "Popsat",
 
-  "submission.sections.submit.progressbar.duplicates": "Potential duplicates",
+  "submission.sections.submit.progressbar.duplicates": "Potenciální duplikáty",
+
+  "submission.sections.submit.progressbar.detect-duplicate": "Potenciální duplicity",
 
   "submission.sections.submit.progressbar.identifiers": "Identifikátory",
 
