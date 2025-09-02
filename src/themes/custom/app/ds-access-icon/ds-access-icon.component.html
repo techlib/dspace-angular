@@ -1,41 +1,44 @@
-<!-- <div> <b>[Access ICON {{url}}]</b></div> -->
+<!-- -->
+<!--<div> <b>[Access ICON {{url}}]</b></div> -->
+<!--<div> <b>[Entity Type  = >>{{ entitytype }}<< ]</b></div> -->
+<!--<div>Item: {{item}}</div>-->
 
-<div *ngIf="url" class="">
+<!--<div *ngIf="url" class="">-->
     <a class="dont-break-out" [href]="url">
 
 <div class="itooltip">
       <img *ngIf="url.includes('/c_f1cf')"  width="50" height="50" 
       alt="Embargo"
-      src="assets/images/zamky_Partialy_closed_access_hodiny.png">
-  <span class="itooltiptext">Embargo</span>
+      src="assets/custom/images/zamky_Partialy_closed_access_hodiny.png">
+  <span class="itooltiptext">&nbsp;{{ 'access-icon.tooltip-Partialy_closed_access_hodiny' | translate  }}&nbsp;</span>
 </div>
 
 <div class="itooltip">
       <img *ngIf="url.includes('/c_14cb')"  width="50" height="50" 
       alt="Pouze metadata"
-      src="assets/images/zamky_Closed_access.png">
-  <span class="itooltiptext">Pouze metadata</span>
+      src="assets/custom/images/zamky_Closed_access.png">
+  <span class="itooltiptext">{{'access-icon.tooltip-closed' | translate  }}</span>
 </div>
 
 <div class="itooltip">
       <img *ngIf="url.includes('/c_abf2')"  width="50" height="50" 
       alt="Otevřený přístup"
-      src="assets/images/zamky_Open_access.png">
+      src="assets/custom/images/zamky_Open_access.png">
 
-  <span class="itooltiptext">Otevřený přístup</span>
+  <span class="itooltiptext">{{'access-icon.tooltip-open' | translate }}</span>
 </div>
 
 
 <div class="itooltip">
       <img *ngIf="url.includes('/c_16ec')"  width="50" height="50" 
       alt="Omezený přístup"
-      src="assets/images/zamky_Partialy_closed_access_instituce.png">
-  <span class="itooltiptext">Omezený přístup</span>
+      src="assets/custom/images/zamky_Partialy_closed_access_instituce.png">
+  <span class="itooltiptext">{{'access-icon.tooltip-Partialy_closed_access_instituce' | translate }}</span>
 </div>
 
    </a>
 
-</div>
+<!--</div>-->
 
 <!--
 

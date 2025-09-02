@@ -1,4 +1,13 @@
 {
+"access-icon.tooltip-open": "Open Access",
+"access-icon.tooltip-closed": "Metadata Only Access",
+"access-icon.tooltip-Partialy_closed_access_hodiny": "Embargoed Access",
+"access-icon.tooltip-Partialy_closed_access_instituce": "Restricted Access",
+
+
+"publication.page.license-tooltip-law-act": "Act No. 121/2000 Coll.",
+
+"publication.page.license-alternate": "License: ",
 
 "publication.page.title-alternate": "Subtitle: ",
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Vrstva_1" data-name="Vrstva 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.48 30.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: .75px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #1d1d1b;
+      }
+
+      .cls-5 {
+        font-size: 8px;
+      }
+
+      .cls-5, .cls-3, .cls-6, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-7 {
+        font-family: UniversCom-65Bold, 'Univers Com';
+        font-weight: 700;
+      }
+
+      .cls-8, .cls-7 {
+        fill: #1d1d1b;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-7 {
+        font-size: 14px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x=".38" y=".37" width="89.31" height="29.85" rx="1" ry="1"/>
+    <rect class="cls-2" x=".38" y=".37" width="89.31" height="29.85" rx="1" ry="1"/>
+  </g>
+  <rect class="cls-8" x="15.04" y="4.08" width="74.61" height="22.13"/>
+  <ellipse class="cls-3" cx="14.16" cy="14.95" rx="12.79" ry="12.98"/>
+  <ellipse class="cls-4" cx="13.91" cy="15.04" rx="10.16" ry="10.13"/>
+  <path class="cls-6" d="M10.43,14.32c.15-.95,6.92-.82,7.04.14.07.51-1.71,1.41-3.34,1.45-1.89.05-3.79-1.07-3.7-1.59Z"/>
+  <text class="cls-7" transform="translate(8.99 20.07)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-5" transform="translate(31.55 17.89)"><tspan x="0" y="0">CO</tspan><tspan class="cls-9" x="11.56" y="0">P</tspan><tspan x="16.25" y="0">YRIGHT</tspan></text>
+</svg>
