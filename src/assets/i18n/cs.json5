@@ -1684,9 +1684,9 @@
 
   "deny-request-copy.success": "Úspěšně zamítnuta žádost o kopii záznamy",
 
-  "dropdown.clear": "Clear selection",
+  "dropdown.clear": "Smazat výběr",
 
-  "dropdown.clear.tooltip": "Clear the selected option",
+  "dropdown.clear.tooltip": "Smazat vybranou možnost",
 
   "dso.name.untitled": "Bez názvu",
 
@@ -1698,7 +1698,7 @@
 
   "dso-selector.create.community.head": "Nová komunita",
 
-  "dso-selector.create.community.or-divider": "or",
+  "dso-selector.create.community.or-divider": "nebo",
 
   "dso-selector.create.community.sub-level": "Vytvořit novou komunitu v",
 
@@ -1728,11 +1728,11 @@
 
   "dso-selector.placeholder": "Hledat {{ type }}",
 
-  "dso-selector.placeholder.type.community": "community",
+  "dso-selector.placeholder.type.community": "komunita",
 
-  "dso-selector.placeholder.type.collection": "collection",
+  "dso-selector.placeholder.type.collection": "kolekce",
 
-  "dso-selector.placeholder.type.item": "item",
+  "dso-selector.placeholder.type.item": "položka",
 
   "dso-selector.select.collection.head": "Vyberte kolekci",
 
@@ -4616,15 +4616,15 @@
 
   "search.sidebar.settings.sort-by": "Řadit dle",
 
-  "search.sidebar.advanced-search.title": "Advanced Search",
+  "search.sidebar.advanced-search.title": "Pokročilé vyhledávání",
 
-  "search.sidebar.advanced-search.filter-by": "Filter by",
+  "search.sidebar.advanced-search.filter-by": "Filtrovat podle",
 
-  "search.sidebar.advanced-search.filters": "Filters",
+  "search.sidebar.advanced-search.filters": "Filtry",
 
-  "search.sidebar.advanced-search.operators": "Operators",
+  "search.sidebar.advanced-search.operators": "Výrazy",
 
-  "search.sidebar.advanced-search.add": "Add",
+  "search.sidebar.advanced-search.add": "Přidat",
 
   "search.sidebar.settings.title": "Nastavení",
 
@@ -5004,7 +5004,7 @@
 
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.openaireTitle": "OpenAIRE Titles ({{ count }})",
 
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.openaireFunding": "OpenAIRE Funding ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.openAIREFunding": "Financování OpenAIRE API",
 
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournalIssn": "Sherpa Journals by ISSN ({{ count }})",
 
@@ -6090,7 +6090,7 @@
 
   "access-control-option-end-date-note": "Vyberte datum, do kterého má být typ přístupu aktivován",
 
-  "vocabulary-treeview.search.form.add": "Add",
+  "vocabulary-treeview.search.form.add": "Přidat",
 
   "admin.notifications.publicationclaim.breadcrumbs": "Publication Claim",
 
