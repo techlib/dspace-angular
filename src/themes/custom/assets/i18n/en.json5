@@ -109,4 +109,8 @@
 
 "vocabulary-treeview.search.form.search-placeholder": "",
 
+"item.page.content.warning.title": "WARNING",
+
+"item.page.content.warning.message": "Once clicked, the video will be downloaded to your device.",
+
 }

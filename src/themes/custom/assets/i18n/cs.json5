@@ -108,6 +108,10 @@
 
 "submission.sections.submit.progressbar.organization.stepone": "Organizace",
 
-"vocabulary-treeview.search.form.search-placeholder": "",
+"vocabulary-treeview.search.form.search-placeholder": " ",
+
+"item.page.content.warning.title": "UPOZORNĚNÍ",
+
+"item.page.content.warning.message": "video se po rozkliknutí začne stahovat do vašeho zařízení.",
 
 }
