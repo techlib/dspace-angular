@@ -49,6 +49,10 @@
       [fields]="['dc.title']"
       [label]="'person.page.name'">
     </ds-generic-item-page-field>
+    <ds-item-page-uri-field [item]="object"
+       [fields]="['person.identifier.orcid']"
+       [label]="'person.page.orcid'">
+    </ds-item-page-uri-field>
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']">
         {{"item.page.link.full" | translate}}
