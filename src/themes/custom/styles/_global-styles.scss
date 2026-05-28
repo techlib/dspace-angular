@@ -2,3 +2,20 @@
 
 // imports the base global style
 @import '../../../styles/_global-styles.scss';
+
+// RA disable word break and hyphens: here to override  global app styles css - BUT ?
+/* Specifically target the DSpace utility class causing the issue */
+.dont-break-out, 
+.text-break {
+  word-break: normal !important;
+  word-wrap: normal !important;
+  overflow-wrap: anywhere !important; /* 'anywhere' is safer for layout than 'break-all' */
+  -webkit-hyphens: none !important;
+  hyphens: none !important;
+}
+
+/* Optional: Ensure long URLs or strings don't break the layout */
+.text-break {
+  word-break: break-word !important; 
+  hyphens: none !important;
+}
