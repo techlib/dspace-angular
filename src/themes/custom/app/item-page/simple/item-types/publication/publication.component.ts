@@ -29,4 +29,3 @@ export class PublicationComponent extends BaseComponent {
 
 
 }
-
