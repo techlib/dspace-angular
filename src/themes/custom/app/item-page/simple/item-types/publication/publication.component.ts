@@ -24,7 +24,7 @@ import { PublicationComponent as BaseComponent } from '../../../../../../../app/
 })
 export class PublicationComponent extends BaseComponent {
 
-//  // #RA added to get current UI language - required public TranslateService (singleton service to translate is not public !!!) 
+//  // #RA added to get current UI language - required public TranslateService (singleton service to translate is not public !!!)
 //  public translatePublicationPubService = inject(TranslateService);
 
 

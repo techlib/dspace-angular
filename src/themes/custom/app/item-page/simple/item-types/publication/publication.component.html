@@ -25,7 +25,7 @@
     [fields]="['dc.title.alternative']"
      [label]="''">
 		</ds-generic-item-page-field></h3>
-</div>	
+</div>
 <div class="row no-gutters">
   <div class="col-xs-12 col-md-4">
     <ng-container *ngIf="!(mediaViewer.image || mediaViewer.video)">
@@ -38,9 +38,9 @@
     </div>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
     <ds-item-page-uri-field [item]="object"
-      [fields]="['idr.externalLocationURL']" 
+      [fields]="['idr.externalLocationURL']"
       [label]="'item.page.externalLocation'">
-    </ds-item-page-uri-field> 
+    </ds-item-page-uri-field>
 
 
     <div class="item-page-field">
@@ -55,73 +55,73 @@
 <!--	<a href="{{object['metadata']['dc.rights.license'][0].value}}">-->
 <!--	|{{object['metadata']['dc.rights.license'][0].value}}|</a>-->
 <!--       <br>-->
-<!--      *ngIf="!( object && object['metadata']['dc.rights.license']) 
+<!--      *ngIf="!( object && object['metadata']['dc.rights.license'])
           || object?.metadata?.['dc.rights.license'] === 'none'" -->
 
 <!--      To detect UI language use this varaible inited in the .ts -->
 <!--      <span> LANG:{{ translatePublicationPubService.currentLang }} </span>-->
-      
-      <div *ngIf="!( object && object['metadata']['dc.rights.license']) 
-          || object?.metadata?.['dc.rights.license'][0].value === 'none'" 
-      class="itooltip">                                                                                                 
+
+      <div *ngIf="!( object && object['metadata']['dc.rights.license'])
+          || object?.metadata?.['dc.rights.license'][0].value === 'none'"
+      class="itooltip">
               <img  width="90" height="31"
               src="assets/custom/images/IKONA_AZ_EN_font_4ra_C.svg">
-        <span class="itooltiptext">{{'publication.page.license-tooltip-law-act' | translate}} </span>                                                                                        
+        <span class="itooltiptext">{{'publication.page.license-tooltip-law-act' | translate}} </span>
 <!--        <span class="itooltiptext" [innerHTML]="{{'publication.page.license-tooltip-law-act' | translate}}"></span>                                                                                        -->
 <!--        <span class="itooltiptext">zákon č.<br>121/2000 Sb.</span>                                                                                        -->
-      </div>                                                                                                                             
+      </div>
 
       <a class="dont-break-out" *ngFor="let mdValue of object['metadata']['dc.rights.license']; let last=last;" [href]="mdValue.value">
       <!-- mdValue = |{{mdValue.value}}| <br> -->
 <!--      src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nd.png">-->
 
-        <div *ngIf="mdValue.value.includes('/by/')" class="itooltip">                                                                                                             
+        <div *ngIf="mdValue.value.includes('/by/')" class="itooltip">
                 <img  width="90" height="31"
                 src="assets/custom/images//by.png">
-          <span class="itooltiptext">CC BY</span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext">CC BY</span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/by-nc/')" class="itooltip">                                                                                                             
+        <div *ngIf="mdValue.value.includes('/by-nc/')" class="itooltip">
                 <img  width="90" height="31"
                 src="assets/custom/images/by-nc.png">
-          <span class="itooltiptext"> CC BY-NC </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC BY-NC </span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/by-nd/')" class="itooltip">                                                                                                             
+        <div *ngIf="mdValue.value.includes('/by-nd/')" class="itooltip">
                 <img  width="90" height="31"
                 src="assets/custom/images/by-nd.png">
-          <span class="itooltiptext"> CC BY-ND </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC BY-ND </span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/by-sa/')" class="itooltip">   
+        <div *ngIf="mdValue.value.includes('/by-sa/')" class="itooltip">
                 <img   width="90" height="31"
                 src="assets/custom/images/by-sa.png">
-          <span class="itooltiptext"> CC BY-SA </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC BY-SA </span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/by-nc-sa/')" class="itooltip">   
+        <div *ngIf="mdValue.value.includes('/by-nc-sa/')" class="itooltip">
                 <img   width="90" height="31"
                 src="assets/custom/images/by-nc-sa.png">
-          <span class="itooltiptext"> CC BY-NC-SA </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC BY-NC-SA </span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/by-nc-nd/')" class="itooltip">   
+        <div *ngIf="mdValue.value.includes('/by-nc-nd/')" class="itooltip">
                 <img   width="90" height="31"
                 src="assets/custom/images/by-nc-nd.png">
-          <span class="itooltiptext"> CC BY-NC-ND </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC BY-NC-ND </span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/by-cc0d/')" class="itooltip">   
+        <div *ngIf="mdValue.value.includes('/by-cc0d/')" class="itooltip">
                 <img   width="90" height="31"
                 src="assets/custom/images/cc-zero.png">
-          <span class="itooltiptext"> CC0 </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC0 </span>
+        </div>
 
-        <div *ngIf="mdValue.value.includes('/publicdomain/')"  class="itooltip">   
+        <div *ngIf="mdValue.value.includes('/publicdomain/')"  class="itooltip">
                 <img  width="90" height="31"
                 src="assets/custom/images/publicdomain.png">
-          <span class="itooltiptext"> CC0 </span>                                                                                        
-        </div>                                                                                                                             
+          <span class="itooltiptext"> CC0 </span>
+        </div>
 
           <!-- </span> -->
     	  </a>
@@ -196,7 +196,7 @@
       [fields]="['dc.relation.ispartofseries']"
       [label]="'item.preview.dc.relation.ispartof'">
     </ds-generic-item-page-field>
-  </div> 
+  </div>
   <div title="Identifiers">
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.identifier.citation']"
@@ -353,7 +353,7 @@
          [fields]="['dc.relation.isrelatedto']"
          [label]="'item.page.relation.isrelatedto'">
        </ds-item-page-uri-field>
-<!--       
+<!--
     <ds-generic-item-page-field [item]="object"
       [fields]="['relatedItem.title']"
       [label]="'item.page.relatedItem.title'">
